@@ -1,0 +1,55 @@
+.homeContainer {
+  padding: 20px;
+  padding-bottom: 80px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pageHeaderTitle {
+  text-align: center;
+  color: #1565c0;
+  margin: 5px 0 10px 0;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 30px 0 15px 0;
+  border-left: 5px solid #2196f3;
+  padding-left: 12px;
+  color: #333;
+}
+
+.actionButtonGroup {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btnFlex {
+  flex: 1;
+}
+
+.btnSaveAction {
+  background-color: #ff9800;
+  color: white;
+}
+.btnSaveAction:hover {
+  background-color: #f57c00;
+}
+
+.btnCancelEdit {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #ddd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+  transition: background-color 0.2s;
+}
+.btnCancelEdit:hover {
+  background-color: #ccc;
+}

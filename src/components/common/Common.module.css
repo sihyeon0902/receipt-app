@@ -1,0 +1,64 @@
+/* 1. 버튼 공통 스타일 (Base Style) */
+.btnBase {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.2s; /* 상태 변화 애니메이션 최적화 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.btnBase:active {
+  transform: scale(0.97);
+}
+
+/* 버튼 변형(Variants): 기능별 색상 테마 분리 */
+.primary {
+  background-color: #2196f3;
+  color: white;
+}
+.primary:hover {
+  background-color: #1976d2; /* Hover 시 명도 조절로 시각적 피드백 제공 */
+}
+
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+.success:hover {
+  background-color: #388e3c;
+}
+
+.danger {
+  background-color: #ffcdd2;
+  color: #d32f2f;
+}
+
+/* 2. 입력 필드 공통 스타일 */
+.inputBase {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: white;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box; /* 레이아웃 안정성 확보 */
+}
+
+/* 포커스(Focus) 상태 스타일링 */
+.inputBase:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.15);
+  outline: none;
+}
+
+.inputBase::placeholder {
+  color: #adb5bd;
+}

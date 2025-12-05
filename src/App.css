@@ -1,0 +1,13 @@
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrap {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}

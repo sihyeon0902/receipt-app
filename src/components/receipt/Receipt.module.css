@@ -1,0 +1,275 @@
+.receiptScaler {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 0;
+}
+
+.paperReceipt {
+  width: 700px;
+  min-width: 700px;
+  background-color: white;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Gungsuh", "Batang", serif;
+  transform-origin: top center;
+  transform: scale(0.53);
+  margin-bottom: -450px;
+}
+
+@media (min-width: 768px) {
+  .paperReceipt {
+    transform: scale(0.8);
+    margin-bottom: -150px;
+  }
+}
+
+.receiptHeader {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.headerTitleArea {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titleText {
+  display: inline-block;
+  font-size: 3.8rem;
+  font-weight: 600;
+  border-bottom: 4px solid black;
+  padding-bottom: 8px;
+  letter-spacing: 25px;
+  margin: 0;
+  line-height: 1.2;
+  padding-left: 25px;
+  white-space: nowrap;
+}
+
+.headerInfoArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.infoLeftCol {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.rowNo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.rowRecipient {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.recipientWrapper {
+  border-bottom: 2px solid black;
+  min-width: 180px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.customerName {
+  font-size: 2.2rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.labelRecipient {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.rowDate {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.rowTotalLabel {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.infoRightCol {
+  width: 50%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.coopInfo {
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.shopName {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 5px;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.ownerName {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  letter-spacing: 15px;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.contactInfo {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contactRow {
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.contactLabel {
+  margin-right: 10px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.contactValue {
+  min-width: 10px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.tableWrapperSingle {
+  border-top: 3px solid black;
+  margin-top: 5px;
+}
+
+.receiptTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.receiptTable th {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 1.2rem;
+  font-weight: 900;
+  height: 40px;
+  padding: 5px;
+}
+
+.receiptTable th:last-child {
+  border-right: none;
+}
+
+.receiptTable td {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  height: 38px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 5px;
+}
+
+.receiptTable td:last-child {
+  border-right: none;
+}
+
+.tgName {
+  text-align: left;
+  padding-left: 10px !important;
+}
+.tgCenter {
+  text-align: center;
+}
+.tgRight {
+  text-align: right;
+  padding-right: 10px !important;
+}
+.tgRightSum {
+  text-align: right;
+  padding-right: 10px !important;
+  font-family: monospace, serif;
+  font-weight: 600;
+}
+
+.bgGray {
+  background-color: #f9f9f9;
+  text-align: center;
+  letter-spacing: 15px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.totalRow td {
+  border-top: 2px solid black;
+  border-bottom: 3px solid black;
+}
+
+.totalRow .bgGray {
+  font-size: 1.3rem;
+}
+.totalRow .totalText {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.bankFooter {
+  margin-top: 20px;
+  border: 3px solid black;
+  padding: 15px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.thName {
+  width: 35%;
+}
+.thQty {
+  width: 20%;
+}
+.thPrice {
+  width: 20%;
+}
+.thAmount {
+  width: 25%;
+}
+.unitLabel {
+  font-size: 0.8em;
+  margin-left: 2px;
+}

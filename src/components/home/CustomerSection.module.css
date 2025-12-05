@@ -1,0 +1,68 @@
+.section {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  border-left: 4px solid #2196f3;
+  padding-left: 10px;
+  color: #333;
+}
+
+.inputWrapper {
+  margin-bottom: 5px;
+}
+
+.favoritesRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.favoritesLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  white-space: nowrap;
+}
+
+.favoritesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.favoriteChip {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid #e3f2fd;
+  background-color: white;
+  color: #1976d2;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.favoriteChip:hover {
+  background-color: #e3f2fd;
+}
+
+.favoriteChip:active {
+  transform: scale(0.95);
+}
+
+.dateWrapper {
+  margin-top: 10px;
+}
+
+.dateLabel {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}

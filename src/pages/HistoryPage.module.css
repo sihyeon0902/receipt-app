@@ -1,0 +1,138 @@
+.historyContainer {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.historyTitle {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.statusMessage {
+  text-align: center;
+  margin-top: 100px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.historyCard {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.historyCard:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cardHeader {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  user-select: none;
+}
+
+.cardHeader:active {
+  background-color: #f1f3f5;
+}
+
+.cardCustomer {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cardDate {
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 8px;
+}
+
+.cardArrow {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.cardContent {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  background-color: #fafafa;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px dashed #dee2e6;
+}
+
+.btnFlex {
+  flex: 1;
+}
+
+.btnEdit {
+  background-color: #2196f3;
+  color: white;
+}
+.btnEdit:hover {
+  background-color: #1e88e5;
+}
+
+.btnDelete {
+  background-color: #ffebee;
+  color: #c62828;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: background-color 0.2s;
+}
+
+.btnDelete:hover {
+  background-color: #ffcdd2;
+}
+
+.btnCreateNew {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btnCreateNew:hover {
+  background-color: #1976d2;
+}
+
+.cardHeaderActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

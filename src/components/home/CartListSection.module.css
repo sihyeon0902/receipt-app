@@ -1,0 +1,116 @@
+.section {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  border-left: 4px solid #2196f3;
+  padding-left: 10px;
+  color: #333;
+}
+
+.tableContainer {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #e9ecef;
+  padding: 12px 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #495057;
+  border-bottom: 1px solid #ced4da;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 1rem;
+  background-color: white;
+}
+.row:last-child {
+  border-bottom: none;
+}
+
+.colName {
+  flex: 1;
+  padding-right: 10px;
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.colQty {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colPrice {
+  width: 80px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.colAction {
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.qtyControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.qtyInput {
+  width: 45px;
+  padding: 6px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #495057;
+}
+
+.unitText {
+  font-size: 0.8rem;
+  color: #868e96;
+  margin-left: 2px;
+}
+
+.priceText {
+  font-weight: 500;
+  color: #333;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #adb5bd;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.removeBtn:hover {
+  color: #fa5252;
+}
