@@ -36,18 +36,16 @@ const AppContent = () => {
 function App() {
   return (
     <TradeProvider>
-      <Router>
-        <div className="app-container">
-          <NavigationBar />
-          <ToastContainer
-            position="top-center"
-            autoClose={2000}
-            hideProgressBar={true}
-            theme="colored"
-          />
-          <AppContent />
-        </div>
-      </Router>
+      <div className="app-container">
+        <NavigationBar />
+        <ToastContainer
+          position="top-center"
+          autoClose={2000}
+          hideProgressBar={true}
+          theme="colored"
+        />
+        <AppContent />
+      </div>
     </TradeProvider>
   );
 }
