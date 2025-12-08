@@ -14,7 +14,10 @@ const CustomerSection = ({
       return cust;
     }
 
-    return cust.name || cust.customerName || cust.sangho || "이름 없음";
+    if (cust && typeof cust === "object") {
+      return cust.name || cust.customerName || cust.sangho || "";
+    }
+    return "";
   };
 
   return (
@@ -35,7 +38,7 @@ const CustomerSection = ({
             {customerFavorites.map((cust, idx) => (
               <button
                 key={idx}
-                onClick={() => onCustomerSelect(cust)}
+                onClick={() => onCustomerSelect(getDisplayName(cust))}
                 className={styles.favoriteChip}
               >
                 {getDisplayName(cust)}
