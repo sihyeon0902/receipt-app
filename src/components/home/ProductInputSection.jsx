@@ -16,6 +16,16 @@ const ProductInputSection = ({
   nameRef,
   priceRef,
 }) => {
+  const getFishName = (fish) => {
+    if (typeof fish === "string") {
+      return fish;
+    }
+    if (fish && typeof fish === "object") {
+      return fish.name || "";
+    }
+    return "";
+  };
+
   return (
     <section className={styles.section}>
       <h3 className={styles.title}>어종 및 단가 입력</h3>
@@ -67,10 +77,10 @@ const ProductInputSection = ({
               {favorites.map((fish, idx) => (
                 <button
                   key={idx}
-                  onClick={() => onFavoriteSelect(fish.name)}
+                  onClick={() => onFavoriteSelect(getFishName(fish))}
                   className={styles.favoriteChip}
                 >
-                  {fish.name}
+                  {getFishName(fish)}
                 </button>
               ))}
             </div>
