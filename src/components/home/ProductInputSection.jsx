@@ -59,6 +59,7 @@ const ProductInputSection = ({
         <Button variant="success" onClick={onAdd}>
           + 추가하기
         </Button>
+
         {favorites.length > 0 && (
           <div className={styles.favoritesRow}>
             <span className={styles.favoritesLabel}>⭐즐겨찾기 목록 | </span>

@@ -9,6 +9,14 @@ const CustomerSection = ({
   customerFavorites,
   onCustomerSelect,
 }) => {
+  const getDisplayName = (cust) => {
+    if (typeof cust === "string") {
+      return cust;
+    }
+
+    return cust.name || cust.customerName || cust.sangho || "이름 없음";
+  };
+
   return (
     <section className={styles.section}>
       <h3 className={styles.title}>거래처 정보</h3>
@@ -20,7 +28,7 @@ const CustomerSection = ({
         />
       </div>
 
-      {customerFavorites.length > 0 && (
+      {customerFavorites && customerFavorites.length > 0 && (
         <div className={styles.favoritesRow}>
           <span className={styles.favoritesLabel}>⭐즐겨찾기 목록 | </span>
           <div className={styles.favoritesList}>
@@ -30,7 +38,7 @@ const CustomerSection = ({
                 onClick={() => onCustomerSelect(cust)}
                 className={styles.favoriteChip}
               >
-                {cust}
+                {getDisplayName(cust)}
               </button>
             ))}
           </div>

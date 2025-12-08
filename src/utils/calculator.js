@@ -1,3 +1,4 @@
+// 날짜 포맷팅 함수 (YYYY-MM-DD -> YYYY 년 M 월 D 일)
 export const formatDate = (dateString) => {
   if (!dateString) {
     const today = new Date();
